@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS codeup_test_db;
+
+USE codeup_test_db;
+
+DROP TABLE IF EXISTS albums;
+
+
+
+
+CREATE TABLE albums(
+id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY, --primary key can go here
+artist VARCHAR(255) NOT NULL,
+name VARCHAR(255) NOT NULL,
+release_date DATE, --INT UNSIGNED NOT NULL
+genre VARCHAR(255) NOT NULL,
+sales DECIMAL(11, 2), --FLOAT
+PRIMARY KEY(id)
+);
+
+DESCRIBE albums;
