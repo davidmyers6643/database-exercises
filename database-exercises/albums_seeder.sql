@@ -1,8 +1,12 @@
-CREATE DATABASE IF NOT EXISTS codeup_test_db;
+SELECT 'Using codeup_test_db' AS 'Use Statment';
 
 USE codeup_test_db;
 
-DROP TABLE IF EXISTS albums;
+SELECT 'Truncating albums table' AS 'Truncate Statement';
+
+TRUNCATE albums;
+
+SELECT 'Inserting records into albums table' AS 'Insert Statement';
 
 INSERT INTO albums (artist, name, release_date, genre, sales) VALUES
 ('Michael Jackson', 'Thriller', 1982, 'Pop, Rock, R&B', 47.3),
