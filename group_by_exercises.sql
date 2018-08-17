@@ -42,7 +42,7 @@ WHERE first_name = 'Kokou' and gender = 'F';
 
 SELECT * FROM songs WHERE month_fy BETWEEN 5 AND 8
 GROUP BY genre
-ORDER BY plays DESC
+ORDER BY plays
 DESC LIMIT 10;
 
 SELECT CONCAT_ws(', ', first_name, last_name, emp_no, hire_date) AS myRes
